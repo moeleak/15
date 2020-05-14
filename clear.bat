@@ -1,0 +1,1 @@
+del bin\* build\* /q /f /s

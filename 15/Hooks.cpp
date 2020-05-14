@@ -579,7 +579,7 @@ HRESULT __stdcall Hooks::Present(IDirect3DDevice9* pDevice, const RECT* pSourceR
 
         ImGui_ImplDX9_NewFrame();
 
-        //std::string szWatermark = "Antario";
+        //std::string szWatermark = "15";
         //g_Render.String(8, 8, CD3DFONT_DROPSHADOW, Color(250, 150, 200, 180), g_Fonts.pFontSegoeUI8.get(),
           //              szWatermark.c_str());
 
@@ -625,7 +625,7 @@ HRESULT __stdcall Hooks::StreamPresent(IDirect3DDevice9* pDevice, const RECT* pS
 
         ImGui_ImplDX9_NewFrame();
 
-        //std::string szWatermark = "Antario";
+        //std::string szWatermark = "15";
         //g_Render.String(8, 8, CD3DFONT_DROPSHADOW, Color(250, 150, 200, 180), g_Fonts.pFontSegoeUI8.get(),
         //              szWatermark.c_str());
 

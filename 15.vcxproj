@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{1B8103F7-F793-47B0-9FBE-44EC66BC319D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Antario</RootNamespace>
+    <RootNamespace>15</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -108,8 +108,8 @@
       <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;WIN32;_DEBUG;ANTARIO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;WIN32;_DEBUG;15_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -127,7 +127,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;ANTARIO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;15_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>true</BrowseInformation>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
@@ -147,8 +147,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;WIN32;NDEBUG;ANTARIO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;WIN32;NDEBUG;15_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MinimalRebuild>true</MinimalRebuild>
@@ -172,7 +172,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;ANTARIO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;15_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -185,138 +185,138 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Antario\Features\Aimbot.cpp" />
-    <ClCompile Include="Antario\Features\Backtrack.cpp" />
-    <ClCompile Include="Antario\Features\Bunnyhop.cpp" />
-    <ClCompile Include="Antario\Features\Chams.cpp" />
-    <ClCompile Include="Antario\Features\EnginePrediction.cpp" />
-    <ClCompile Include="Antario\Features\FakeLatency.cpp" />
-    <ClCompile Include="Antario\Features\Glow.cpp" />
-    <ClCompile Include="Antario\Features\InventoryChanger.cpp" />
-    <ClCompile Include="Antario\Features\NadePrediction.cpp" />
-    <ClCompile Include="Antario\Features\NightMode.cpp" />
-    <ClCompile Include="Antario\Features\ThirdPerson.cpp" />
-    <ClCompile Include="Antario\Hooks.cpp" />
-    <ClCompile Include="Antario\DLLMain.cpp" />
-    <ClCompile Include="Antario\15GUI\Menu.cpp" />
-    <ClCompile Include="Antario\SDK\Imgui\imgui.cpp" />
-    <ClCompile Include="Antario\SDK\Imgui\imgui_draw.cpp" />
-    <ClCompile Include="Antario\SDK\Imgui\imgui_impl_dx9.cpp" />
-    <ClCompile Include="Antario\SDK\Protobuf\base_gcmessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\cstrike15_gcmessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\cstrike15_usermessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\econ_gcmessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\engine_gcmessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\fatdemo.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\gcsdk_gcmessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\gcsystemmsgs.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\netmessages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\network_connection.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\steamdatagram_messages.pb.cc" />
-    <ClCompile Include="Antario\SDK\Protobuf\steammessages.pb.cc" />
-    <ClCompile Include="Antario\Settings.cpp" />
-    <ClCompile Include="Antario\Utils\D3DFont.cpp" />
-    <ClCompile Include="Antario\Utils\DrawManager.cpp" />
-    <ClCompile Include="Antario\Utils\GlobalVars.cpp" />
-    <ClCompile Include="Antario\Utils\Interfaces.cpp" />
-    <ClCompile Include="Antario\Utils\Math.cpp" />
-    <ClCompile Include="Antario\Utils\NetvarManager.cpp" />
-    <ClCompile Include="Antario\Features\ESP.cpp" />
-    <ClCompile Include="Antario\Utils\SpoofedConvar.cpp" />
-    <ClCompile Include="Antario\Utils\VMTHook.cpp" />
+    <ClCompile Include="15\Features\Aimbot.cpp" />
+    <ClCompile Include="15\Features\Backtrack.cpp" />
+    <ClCompile Include="15\Features\Bunnyhop.cpp" />
+    <ClCompile Include="15\Features\Chams.cpp" />
+    <ClCompile Include="15\Features\EnginePrediction.cpp" />
+    <ClCompile Include="15\Features\FakeLatency.cpp" />
+    <ClCompile Include="15\Features\Glow.cpp" />
+    <ClCompile Include="15\Features\InventoryChanger.cpp" />
+    <ClCompile Include="15\Features\NadePrediction.cpp" />
+    <ClCompile Include="15\Features\NightMode.cpp" />
+    <ClCompile Include="15\Features\ThirdPerson.cpp" />
+    <ClCompile Include="15\Hooks.cpp" />
+    <ClCompile Include="15\DLLMain.cpp" />
+    <ClCompile Include="15\15GUI\Menu.cpp" />
+    <ClCompile Include="15\SDK\Imgui\imgui.cpp" />
+    <ClCompile Include="15\SDK\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="15\SDK\Imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="15\SDK\Protobuf\base_gcmessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\cstrike15_gcmessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\cstrike15_usermessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\econ_gcmessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\engine_gcmessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\fatdemo.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\gcsdk_gcmessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\gcsystemmsgs.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\netmessages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\network_connection.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\steamdatagram_messages.pb.cc" />
+    <ClCompile Include="15\SDK\Protobuf\steammessages.pb.cc" />
+    <ClCompile Include="15\Settings.cpp" />
+    <ClCompile Include="15\Utils\D3DFont.cpp" />
+    <ClCompile Include="15\Utils\DrawManager.cpp" />
+    <ClCompile Include="15\Utils\GlobalVars.cpp" />
+    <ClCompile Include="15\Utils\Interfaces.cpp" />
+    <ClCompile Include="15\Utils\Math.cpp" />
+    <ClCompile Include="15\Utils\NetvarManager.cpp" />
+    <ClCompile Include="15\Features\ESP.cpp" />
+    <ClCompile Include="15\Utils\SpoofedConvar.cpp" />
+    <ClCompile Include="15\Utils\VMTHook.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Antario\15GUI\Fonts\UnifrakturCook.h" />
-    <ClInclude Include="Antario\Features\Aimbot.h" />
-    <ClInclude Include="Antario\Features\Backtrack.h" />
-    <ClInclude Include="Antario\Features\Bunnyhop.h" />
-    <ClInclude Include="Antario\Features\Chams.h" />
-    <ClInclude Include="Antario\Features\EnginePrediction.h" />
-    <ClInclude Include="Antario\Features\EventLogger.h" />
-    <ClInclude Include="Antario\Features\FakeLatency.h" />
-    <ClInclude Include="Antario\Features\Features.h" />
-    <ClInclude Include="Antario\Features\Glow.h" />
-    <ClInclude Include="Antario\Features\InventoryChanger.h" />
-    <ClInclude Include="Antario\Features\NadePrediction.h" />
-    <ClInclude Include="Antario\Features\NightMode.h" />
-    <ClInclude Include="Antario\Features\ThirdPerson.h" />
-    <ClInclude Include="Antario\Hooks.h" />
-    <ClInclude Include="Antario\15GUI\Menu.h" />
-    <ClInclude Include="Antario\SDK\CClientState.h" />
-    <ClInclude Include="Antario\SDK\CGlobalVarsBase.h" />
-    <ClInclude Include="Antario\SDK\CHandle.h" />
-    <ClInclude Include="Antario\SDK\CEntity.h" />
-    <ClInclude Include="Antario\SDK\CInput.h" />
-    <ClInclude Include="Antario\SDK\ClientClass.h" />
-    <ClInclude Include="Antario\SDK\Color.h" />
-    <ClInclude Include="Antario\SDK\CPrediction.h" />
-    <ClInclude Include="Antario\SDK\Definitions.h" />
-    <ClInclude Include="Antario\SDK\IAppSystem.h" />
-    <ClInclude Include="Antario\SDK\IBaseClientDll.h" />
-    <ClInclude Include="Antario\SDK\IClientEntity.h" />
-    <ClInclude Include="Antario\SDK\IClientEntityList.h" />
-    <ClInclude Include="Antario\SDK\IClientMode.h" />
-    <ClInclude Include="Antario\SDK\IClientNetworkable.h" />
-    <ClInclude Include="Antario\SDK\IClientRenderable.h" />
-    <ClInclude Include="Antario\SDK\IClientThinkable.h" />
-    <ClInclude Include="Antario\SDK\IClientUnknown.h" />
-    <ClInclude Include="Antario\SDK\IConVar.h" />
-    <ClInclude Include="Antario\SDK\IEngineTrace.h" />
-    <ClInclude Include="Antario\SDK\IGameEvent.h" />
-    <ClInclude Include="Antario\SDK\ILocalize.h" />
-    <ClInclude Include="Antario\SDK\IMaterial.h" />
-    <ClInclude Include="Antario\SDK\IMaterialSystem.h" />
-    <ClInclude Include="Antario\SDK\IMemAlloc.h" />
-    <ClInclude Include="Antario\SDK\Imgui\imconfig.h" />
-    <ClInclude Include="Antario\SDK\Imgui\imgui.h" />
-    <ClInclude Include="Antario\SDK\Imgui\imgui_impl_dx9.h" />
-    <ClInclude Include="Antario\SDK\Imgui\imgui_internal.h" />
-    <ClInclude Include="Antario\SDK\Imgui\stb_rect_pack.h" />
-    <ClInclude Include="Antario\SDK\Imgui\stb_textedit.h" />
-    <ClInclude Include="Antario\SDK\Imgui\stb_truetype.h" />
-    <ClInclude Include="Antario\SDK\IRenderView.h" />
-    <ClInclude Include="Antario\SDK\ISurface.h" />
-    <ClInclude Include="Antario\SDK\ICVar.h" />
-    <ClInclude Include="Antario\SDK\IVEngineClient.h" />
-    <ClInclude Include="Antario\SDK\IViewRender.h" />
-    <ClInclude Include="Antario\SDK\IVModelRender.h" />
-    <ClInclude Include="Antario\SDK\Json\Json.h" />
-    <ClInclude Include="Antario\SDK\KeyValues.h" />
-    <ClInclude Include="Antario\SDK\Misc.h" />
-    <ClInclude Include="Antario\SDK\PlayerInfo.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\base_gcmessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\cstrike15_gcmessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\cstrike15_usermessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\econ_gcmessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\engine_gcmessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\fatdemo.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\gcsdk_gcmessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\gcsystemmsgs.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\netmessages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\network_connection.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\steamdatagram_messages.pb.h" />
-    <ClInclude Include="Antario\SDK\Protobuf\steammessages.pb.h" />
-    <ClInclude Include="Antario\SDK\SDK.h" />
-    <ClInclude Include="Antario\SDK\Steam\ISteamClientPublic.h" />
-    <ClInclude Include="Antario\SDK\Steam\ISteamUser.h" />
-    <ClInclude Include="Antario\Settings.h" />
-    <ClInclude Include="Antario\Utils\D3DFont.h" />
-    <ClInclude Include="Antario\Utils\DrawManager.h" />
-    <ClInclude Include="Antario\EventListener.h" />
-    <ClInclude Include="Antario\Utils\GlobalVars.h" />
-    <ClInclude Include="Antario\Utils\HideMoudle.h" />
-    <ClInclude Include="Antario\Utils\Interfaces.h" />
-    <ClInclude Include="Antario\SDK\Recv.h" />
-    <ClInclude Include="Antario\SDK\Vector.h" />
-    <ClInclude Include="Antario\SDK\VMatrix.h" />
-    <ClInclude Include="Antario\Utils\Math.h" />
-    <ClInclude Include="Antario\Utils\NetvarManager.h" />
-    <ClInclude Include="Antario\Utils\SpoofedConvar.h" />
-    <ClInclude Include="Antario\Utils\Utils.h" />
-    <ClInclude Include="Antario\Features\ESP.h" />
-    <ClInclude Include="Antario\Utils\VMProtect.h" />
-    <ClInclude Include="Antario\Utils\VMTHook.h" />
-    <ClInclude Include="Antario\Utils\Xorstr.h" />
+    <ClInclude Include="15\15GUI\Fonts\UnifrakturCook.h" />
+    <ClInclude Include="15\Features\Aimbot.h" />
+    <ClInclude Include="15\Features\Backtrack.h" />
+    <ClInclude Include="15\Features\Bunnyhop.h" />
+    <ClInclude Include="15\Features\Chams.h" />
+    <ClInclude Include="15\Features\EnginePrediction.h" />
+    <ClInclude Include="15\Features\EventLogger.h" />
+    <ClInclude Include="15\Features\FakeLatency.h" />
+    <ClInclude Include="15\Features\Features.h" />
+    <ClInclude Include="15\Features\Glow.h" />
+    <ClInclude Include="15\Features\InventoryChanger.h" />
+    <ClInclude Include="15\Features\NadePrediction.h" />
+    <ClInclude Include="15\Features\NightMode.h" />
+    <ClInclude Include="15\Features\ThirdPerson.h" />
+    <ClInclude Include="15\Hooks.h" />
+    <ClInclude Include="15\15GUI\Menu.h" />
+    <ClInclude Include="15\SDK\CClientState.h" />
+    <ClInclude Include="15\SDK\CGlobalVarsBase.h" />
+    <ClInclude Include="15\SDK\CHandle.h" />
+    <ClInclude Include="15\SDK\CEntity.h" />
+    <ClInclude Include="15\SDK\CInput.h" />
+    <ClInclude Include="15\SDK\ClientClass.h" />
+    <ClInclude Include="15\SDK\Color.h" />
+    <ClInclude Include="15\SDK\CPrediction.h" />
+    <ClInclude Include="15\SDK\Definitions.h" />
+    <ClInclude Include="15\SDK\IAppSystem.h" />
+    <ClInclude Include="15\SDK\IBaseClientDll.h" />
+    <ClInclude Include="15\SDK\IClientEntity.h" />
+    <ClInclude Include="15\SDK\IClientEntityList.h" />
+    <ClInclude Include="15\SDK\IClientMode.h" />
+    <ClInclude Include="15\SDK\IClientNetworkable.h" />
+    <ClInclude Include="15\SDK\IClientRenderable.h" />
+    <ClInclude Include="15\SDK\IClientThinkable.h" />
+    <ClInclude Include="15\SDK\IClientUnknown.h" />
+    <ClInclude Include="15\SDK\IConVar.h" />
+    <ClInclude Include="15\SDK\IEngineTrace.h" />
+    <ClInclude Include="15\SDK\IGameEvent.h" />
+    <ClInclude Include="15\SDK\ILocalize.h" />
+    <ClInclude Include="15\SDK\IMaterial.h" />
+    <ClInclude Include="15\SDK\IMaterialSystem.h" />
+    <ClInclude Include="15\SDK\IMemAlloc.h" />
+    <ClInclude Include="15\SDK\Imgui\imconfig.h" />
+    <ClInclude Include="15\SDK\Imgui\imgui.h" />
+    <ClInclude Include="15\SDK\Imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="15\SDK\Imgui\imgui_internal.h" />
+    <ClInclude Include="15\SDK\Imgui\stb_rect_pack.h" />
+    <ClInclude Include="15\SDK\Imgui\stb_textedit.h" />
+    <ClInclude Include="15\SDK\Imgui\stb_truetype.h" />
+    <ClInclude Include="15\SDK\IRenderView.h" />
+    <ClInclude Include="15\SDK\ISurface.h" />
+    <ClInclude Include="15\SDK\ICVar.h" />
+    <ClInclude Include="15\SDK\IVEngineClient.h" />
+    <ClInclude Include="15\SDK\IViewRender.h" />
+    <ClInclude Include="15\SDK\IVModelRender.h" />
+    <ClInclude Include="15\SDK\Json\Json.h" />
+    <ClInclude Include="15\SDK\KeyValues.h" />
+    <ClInclude Include="15\SDK\Misc.h" />
+    <ClInclude Include="15\SDK\PlayerInfo.h" />
+    <ClInclude Include="15\SDK\Protobuf\base_gcmessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\cstrike15_gcmessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\cstrike15_usermessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\econ_gcmessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\engine_gcmessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\fatdemo.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\gcsdk_gcmessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\gcsystemmsgs.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\netmessages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\network_connection.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\steamdatagram_messages.pb.h" />
+    <ClInclude Include="15\SDK\Protobuf\steammessages.pb.h" />
+    <ClInclude Include="15\SDK\SDK.h" />
+    <ClInclude Include="15\SDK\Steam\ISteamClientPublic.h" />
+    <ClInclude Include="15\SDK\Steam\ISteamUser.h" />
+    <ClInclude Include="15\Settings.h" />
+    <ClInclude Include="15\Utils\D3DFont.h" />
+    <ClInclude Include="15\Utils\DrawManager.h" />
+    <ClInclude Include="15\EventListener.h" />
+    <ClInclude Include="15\Utils\GlobalVars.h" />
+    <ClInclude Include="15\Utils\HideMoudle.h" />
+    <ClInclude Include="15\Utils\Interfaces.h" />
+    <ClInclude Include="15\SDK\Recv.h" />
+    <ClInclude Include="15\SDK\Vector.h" />
+    <ClInclude Include="15\SDK\VMatrix.h" />
+    <ClInclude Include="15\Utils\Math.h" />
+    <ClInclude Include="15\Utils\NetvarManager.h" />
+    <ClInclude Include="15\Utils\SpoofedConvar.h" />
+    <ClInclude Include="15\Utils\Utils.h" />
+    <ClInclude Include="15\Features\ESP.h" />
+    <ClInclude Include="15\Utils\VMProtect.h" />
+    <ClInclude Include="15\Utils\VMTHook.h" />
+    <ClInclude Include="15\Utils\Xorstr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
