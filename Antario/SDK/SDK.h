@@ -1,0 +1,27 @@
+#pragma once
+
+#include "CClientState.h"
+#include "IClientMode.h"
+#include "IBaseClientDll.h"
+#include "IClientEntityList.h"
+#include "IVEngineClient.h"
+#include "CPrediction.h"
+#include "IGameEvent.h"
+#include "IMemAlloc.h"
+#include "ISurface.h"
+#include "ILocalize.h"
+#include "IEngineTrace.h"
+#include "IMaterialSystem.h"
+#include "IMaterial.h"
+#include "Misc.h"
+#include "ICvar.h"
+#include "IViewRender.h"
+#include "IRenderView.h"
+#include "IVModelRender.h"
+#include "CInput.h"
+#include "IPhysics.h"
+
+#include "../Utils/VMProtect.h"
+
+#include "Json/Json.h"
+#include "Steam/ISteamUser.h"

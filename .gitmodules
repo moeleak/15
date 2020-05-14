@@ -1,0 +1,3 @@
+[submodule "external_stuff"]
+	path = external stuff
+	url = https://github.com/Skyline23/external-libraries
