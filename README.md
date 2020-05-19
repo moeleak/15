@@ -5,9 +5,10 @@ Stream Proof
 AntiVAC
 
 ## Known issues
-* Crash
+* Crashes
 
 ## TODO
-* fix crash
+* fix crashing issue
 * add aimbot
-* hvh stuff
+* add hvh stuff
+* replace vmt with minhook
