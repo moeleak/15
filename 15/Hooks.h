@@ -21,7 +21,7 @@ namespace vtable_indexes
     constexpr auto overridemouseinput   = 23;
     constexpr auto createmove           = 22;
     constexpr auto framestagenotify     = 37;
-    constexpr auto dispatchusermessage  = 37;
+    constexpr auto dispatchusermessage  = 38;
     constexpr auto painttraverse        = 41;
     constexpr auto endscene             = 42;
     constexpr auto senddatagram         = 46;

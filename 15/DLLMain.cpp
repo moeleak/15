@@ -21,7 +21,7 @@ DWORD WINAPI OnDllAttach(PVOID base)
     SetConsoleTitleA(XORSTR("Project 15 - Debug console"));   // Set console name to a custom one
 #endif
 
-    HideModule(GetModuleHandle(L"15.dll"));
+    // HideModule(GetModuleHandle(L"15.dll"));
     
     Utils::Log(XORSTR("Console Allocated!"));
     Hooks::Init();

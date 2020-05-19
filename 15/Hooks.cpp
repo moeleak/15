@@ -558,7 +558,7 @@ HRESULT __stdcall Hooks::Present(IDirect3DDevice9* pDevice, const RECT* pSourceR
     VM_BEGIN("HOOKS_PRESENT")
     static auto oPresent = g_Hooks.pD3DDevice9Hook->GetOriginal<Present_t>(vtable_indexes::present);
 
-    if (g_Settings.Miscellaneous.bStreamProof)
+    if (!g_Settings.Miscellaneous.bStreamProof)
         return oPresent(pDevice, pSourceRect, pDestRect, hDestWindowOverride, pDirtyRegion);
 
     if (!g_Hooks.bInitializedDrawManager)
@@ -604,7 +604,7 @@ HRESULT __stdcall Hooks::StreamPresent(IDirect3DDevice9* pDevice, const RECT* pS
     HWND hDestWindowOverride, const RGNDATA* pDirtyRegion)
 {
     VM_BEGIN("HOOKS_STREAMPRESENT")
-    if (!g_Settings.Miscellaneous.bStreamProof)
+    if (g_Settings.Miscellaneous.bStreamProof)
         return g_Hooks.oStreamPresent(pDevice, pSourceRect, pDestRect, hDestWindowOverride, pDirtyRegion);
 
     if (!g_Hooks.bInitializedDrawManager)
@@ -814,7 +814,7 @@ bool __fastcall Hooks::OverrideConfig(IMaterialSystem* this0, int edx, MaterialS
 /*bool __fastcall Hooks::SvCheats_GetBool(PVOID pConVar, int edx)
 {
     static auto oGetBool = g_Hooks.pConVarsHook->GetOriginal<SvCheatsGetBool_t>(vtable_indexes::getbool);
-    static auto CAM_THINK = Utils::FindSignature(XORSTR("client.dll"), XORSTR("85 C0 75 30 38 86"));
+    static auto CAM_THINK = Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("85 C0 75 30 38 86"));
     if (!pConVar)
         return false;
 

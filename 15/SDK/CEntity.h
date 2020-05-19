@@ -74,7 +74,7 @@ public:
         static SetAbsOriginFn SetAbsOrigin;
 
         if (!SetAbsOrigin)
-            SetAbsOrigin = reinterpret_cast< SetAbsOriginFn >(Utils::FindSignature(XORSTR("client.dll"), XORSTR("55 8B EC 83 E4 F8 51 53 56 57 8B F1 E8 ?? ??")));
+            SetAbsOrigin = reinterpret_cast< SetAbsOriginFn >(Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("55 8B EC 83 E4 F8 51 53 56 57 8B F1 E8 ?? ??")));
 
         SetAbsOrigin(this, vec);
     }
@@ -85,7 +85,7 @@ public:
         static SetAbsAnglesFn SetAbsAngles;
 
         if (!SetAbsAngles)
-            SetAbsAngles = reinterpret_cast< SetAbsAnglesFn >((uintptr_t)Utils::FindSignature(XORSTR("client.dll"), XORSTR("55 8B EC 83 E4 F8 83 EC 64 53 56 57 8B F1 E8")));
+            SetAbsAngles = reinterpret_cast< SetAbsAnglesFn >((uintptr_t)Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("55 8B EC 83 E4 F8 83 EC 64 53 56 57 8B F1 E8")));
 
         SetAbsAngles(this, vec);
     }
@@ -230,7 +230,7 @@ public:
     {
         using Fn = WeaponInfo_t * (__thiscall*)(void*);
 
-        static auto fn = reinterpret_cast<Fn>(Utils::FindSignature(XORSTR("client.dll"), XORSTR("55 8B EC 81 EC ? ? ? ? 53 8B D9 56 57 8D 8B")));
+        static auto fn = reinterpret_cast<Fn>(Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("55 8B EC 81 EC ? ? ? ? 53 8B D9 56 57 8D 8B")));
         return fn(this);
     }
 

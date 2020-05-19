@@ -83,7 +83,7 @@ void Backtrack::BacktrackPlayer(C_BaseEntity * player, LagRecord record)
     if (!player || record.m_flSimulationTime == 0.0f)
         return;
 
-    static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
+    static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
     unsigned long g_iModelBoneCounter = **reinterpret_cast< unsigned long** > (pInvalidateBoneCache + 10);
     *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(player) + 0x2914) = 0xFF7FFFFF;
     *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(player) + 0x2680) = (g_iModelBoneCounter - 1);
@@ -169,7 +169,7 @@ void Backtrack::FrameUpdatePostEntityThink(ClientFrameStage_t stage)
         LagRecord &record = *track.begin();
 
 
-        static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
+        static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
         unsigned long g_iModelBoneCounter = **reinterpret_cast< unsigned long** > (pInvalidateBoneCache + 10);
         *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(pPlayer) + 0x2914) = 0xFF7FFFFF;
         *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(pPlayer) + 0x2680) = (g_iModelBoneCounter - 1);
@@ -225,7 +225,7 @@ void Backtrack::BackupPlayer(C_BaseEntity * pPlayer)
 
     auto &record = m_PrevRecords[idx - 1];
 
-    static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
+    static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
     unsigned long g_iModelBoneCounter = **reinterpret_cast< unsigned long** > (pInvalidateBoneCache + 10);
     *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(pPlayer) + 0x2914) = 0xFF7FFFFF;
     *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(pPlayer) + 0x2680) = (g_iModelBoneCounter - 1);
@@ -247,7 +247,7 @@ void Backtrack::RestorePlayer(C_BaseEntity * pPlayer)
 
     auto &record = m_PrevRecords[idx - 1];
 
-    static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
+    static uintptr_t pInvalidateBoneCache = Utils::FindSignature(XORSTR("client_panorama.dll"), XORSTR("80 3D ? ? ? ? 00 74 16 A1"));
     unsigned long g_iModelBoneCounter = **reinterpret_cast< unsigned long** > (pInvalidateBoneCache + 10);
     *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(pPlayer) + 0x2914) = 0xFF7FFFFF;
     *reinterpret_cast< unsigned int* >(reinterpret_cast< uintptr_t >(pPlayer) + 0x2680) = (g_iModelBoneCounter - 1);
