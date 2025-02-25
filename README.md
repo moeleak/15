@@ -1,11 +1,14 @@
 # Project 15
 
-## Features
-Stream Proof
-AntiVAC
+A csgo cheat for learning reverse engineering.
 
-## Known issues
-* Crashes
+## Features
+- Modern C++ style
+
+- Stream Proof
+
+- AntiVAC
+
 
 ## TODO
 * fix crashing issue
